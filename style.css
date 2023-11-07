@@ -666,6 +666,14 @@ line-height: 29px; /* 120.833% */
 }
 
 .product_name {
-    position: absolute;
+width: 1200px;
+display: flex;
+gap: 24px;
+
+
+    
+}
+
+.product_name_main {
     display: flex;
 }
