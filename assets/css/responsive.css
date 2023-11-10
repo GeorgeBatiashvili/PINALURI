@@ -1,0 +1,42 @@
+
+  
+/* Add this media query to hide/show elements based on screen width */
+@media screen and (max-width: 744px) {
+    /* Hide regular navigation links */
+    .nav_bar ul {
+      display: none;
+    }
+  
+    /* Show burger icon */
+    .burger-icon {
+      display: block;
+    }
+  
+    /* Show navigation links when burger icon is clicked */
+    .nav_bar ul.show {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav_bar li {
+      margin: 0;
+    }
+
+    .section2 > div {
+        flex: 1 0 50%; /* Two items per row */
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+    .section2 > div {
+        flex: 1 0 100%; /* One item per row */
+    }
+}
